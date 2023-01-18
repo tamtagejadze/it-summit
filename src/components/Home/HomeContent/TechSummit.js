@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import summit from '../../../images/summit.png';
-import i18n from '../../../i18next/i18n';
 
 function TechSummit() {
     const {t} = useTranslation();
@@ -17,7 +16,7 @@ function TechSummit() {
                     <Link to={'/registration'} className='register-btn' target='_blank'>{t('REGISTRATION')}</Link>
                 </div>
                 <div>
-                    <a href='#techEvent' className='learnMore-btn'>{t('LEARNMORE')}</a>
+                    <a href='#More' className='learnMore-btn'>{t('LEARNMORE')}</a>
                 </div>
             </div>
         </div>
