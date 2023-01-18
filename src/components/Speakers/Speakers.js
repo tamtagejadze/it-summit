@@ -9,7 +9,7 @@ function Speakers() {
     const [value, setValue] = useState('')
     const {data} = useQuery("users?page=2", () => apiRequest("GET", "users?page=2"))
    
-    
+        
   return (
     <>
     <Header/>

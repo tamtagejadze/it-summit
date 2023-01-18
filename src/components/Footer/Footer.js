@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import i18next from '../../i18next/i18n'
 
 function Footer() {
+    const {t} = useTranslation();
   return (
     <footer>
         <div>
@@ -17,7 +20,7 @@ function Footer() {
             <span>(123) 456-7890</span>
         </div>
         <div>
-            <Link to={'/registration'} target='_blank'>Register Now</Link>
+            <Link to={'/registration'} target='_blank'>{t('REGISTRATION')}</Link>
         </div>
     </footer>
   )

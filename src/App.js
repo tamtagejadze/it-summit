@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Registration from './components/Registration/Registration';
 import Speakers from './components/Speakers/Speakers';
 import Summit from './components/Summit/Summit';
+import './i18next/i18n'
 
 const queryClient = new QueryClient()
 

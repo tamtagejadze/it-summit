@@ -1,20 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import summit from '../../../images/summit.png'
+import summit from '../../../images/summit.png';
+import i18n from '../../../i18next/i18n';
 
 function TechSummit() {
+    const {t} = useTranslation();
   return (
     <div className='techSummit-container'>        
         <div className='techSummit-container-content'>
-            <h1>Largest Tech <br/> Conference in <br/> Caucasus</h1>
-            <h3>Tbilisi, Georgia</h3>
-            <h3>SEPT 5-7, 2025</h3>
+            <h1>{t('MAINHEADER')}</h1>
+            <h3>{t('CITY')}</h3>
+            <h3>{t('DATE')}</h3>
             <div className='techSummit-container-content-btns'>
                 <div >
-                    <Link to={'/registration'} className='register-btn' target='_blank'>Register Now</Link>
+                    <Link to={'/registration'} className='register-btn' target='_blank'>{t('REGISTRATION')}</Link>
                 </div>
                 <div>
-                    <a className='learnMore-btn'>Learn More</a>
+                    <a href='#techEvent' className='learnMore-btn'>{t('LEARNMORE')}</a>
                 </div>
             </div>
         </div>

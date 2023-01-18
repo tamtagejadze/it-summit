@@ -45,6 +45,22 @@ nav a {
   color: white;
 }
 
+.flag {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.geo {
+  width: 25px;
+  cursor: pointer;
+  margin-right: -45px;
+}
+.eng {
+  width: 30px;
+  cursor: pointer;
+}
+
 /* home */
 .techSummit-container {
   position: relative;
@@ -308,3 +324,5 @@ footer a {
 footer div {
   text-align: center;
 }
+
+
